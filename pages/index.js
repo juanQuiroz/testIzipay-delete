@@ -30,6 +30,13 @@ export default function Home() {
 
   return (
     <div>
+      <Script
+        src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js"
+        kr-public-key="57180685:testpublickey_tL1HboKpWgmbr67wrzAkaqUgYtSKUptE05byY2XFPpQnB"
+        kr-post-url-success="paid.html"
+      ></Script>
+      <Script src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic.js"></Script>
+
       <Head>
         <meta
           name="viewport"
@@ -39,18 +46,12 @@ export default function Home() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         {/* <!-- Javascript library. Should be loaded in head section --> */}
 
-        <Script
-          src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js"
-          kr-public-key="57180685:testpublickey_tL1HboKpWgmbr67wrzAkaqUgYtSKUptE05byY2XFPpQnB"
-          kr-post-url-success="paid.html"
-        ></Script>
         {/* <!-- theme and plugins. should be loaded after the javascript library --> */}
         {/* <!-- not mandatory but helps to have a nice payment form out of the box --> */}
         <link
           rel="stylesheet"
           href="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic-reset.css"
         />
-        <Script src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic.js"></Script>
       </Head>
 
       <div className="m-5">
