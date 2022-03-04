@@ -14,7 +14,7 @@ export default function Home() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/createPayment",
+        "https://test-izipay-delete.vercel.app/api/createPayment",
         dataCarrito,
       );
       console.log("TRY-INDEX ->", res);
