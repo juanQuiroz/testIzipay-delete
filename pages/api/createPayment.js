@@ -25,10 +25,10 @@ export default async function handler(req, res) {
 
       console.log("ApiNextJS - TRY -> ", response);
 
-      res.status(200).json(response);
+      res.status(200).send(response);
     } catch (e) {
       console.log("ApiNextJS - CATCH ->", e);
-      res.status(500).json(e);
+      res.status(500).send(e);
     }
   }
 }
