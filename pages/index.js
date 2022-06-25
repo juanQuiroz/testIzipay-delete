@@ -65,12 +65,16 @@ export default function Home() {
             />
           </div>
 
-          <button className="my-3 w-full py-1 text-white bg-red-500  rounded-lg shadow-md">
+          <button
+            type="submit"
+            className="my-3 w-full py-1 text-white bg-red-500  rounded-lg shadow-md"
+          >
             pasar a pago ...
           </button>
         </form>
       </div>
 
+      {/* Se renderiza una vez obtenido el token */}
       <div> {token ? <Pagar token={token} /> : null}</div>
     </div>
   );

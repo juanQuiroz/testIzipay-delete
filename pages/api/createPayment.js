@@ -1,13 +1,13 @@
 import axios from "axios";
 
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
+  if (req.method != "POST") {
     res.status(405).send({ message: "Only POST requests allowed" });
     return;
   }
   if (req.method === "POST") {
     const body = req.body;
-    console.log(body);
+    console.log(" body Recived ApiNextJS:", body);
 
     try {
       const response = await axios.post(
@@ -23,12 +23,12 @@ export default async function handler(req, res) {
         },
       );
 
-      console.log("TRY -> ", response);
+      console.log("ApiNextJS - TRY -> ", response);
 
-      res.status(200).send(response.data);
+      res.status(200).json(response);
     } catch (e) {
-      console.log("CATCH ->", e);
-      res.status(500).send(e);
+      console.log("ApiNextJS - CATCH ->", e);
+      res.status(500).json(e);
     }
   }
 }
