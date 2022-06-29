@@ -9,7 +9,7 @@ const Pagar = ({ token }) => {
       <Script
         src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js"
         kr-public-key="57180685:publickey_WRU6P4ha9JbsAhqeEMXavkS8xiB8ouG88ktVLB6xlXiBq"
-        // kr-post-url-success="paid.html"
+        kr-post-url-success="/paysuccess"
       ></Script>
       <Head>
         <meta
