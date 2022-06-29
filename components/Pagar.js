@@ -36,7 +36,7 @@ const Pagar = ({ token }) => {
         <div className="kr-security-code"></div>
 
         {/* <!-- payment form submit button --> */}
-        <button className="kr-payment-button">Pagar</button>
+        <button className="kr-payment-button"></button>
 
         {/* <!-- error zone --> */}
         <div className="kr-form-error"></div>
