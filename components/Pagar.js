@@ -8,7 +8,8 @@ const Pagar = ({ token }) => {
       <Script src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/ext/classic.js"></Script>
       <Script
         src="https://static.micuentaweb.pe/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js"
-        kr-public-key="57180685:publickey_WRU6P4ha9JbsAhqeEMXavkS8xiB8ouG88ktVLB6xlXiBq"
+        // kr-public-key="57180685:publickey_WRU6P4ha9JbsAhqeEMXavkS8xiB8ouG88ktVLB6xlXiBq"
+        kr-public-key="57180685:testpublickey_tL1HboKpWgmbr67wrzAkaqUgYtSKUptE05byY2XFPpQnB"
         kr-post-url-success="https://test-izipay-delete.vercel.app/exitopayment"
       ></Script>
       <Head>
